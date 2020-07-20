@@ -1,6 +1,6 @@
 # parivartan_world
 
-This project is to promote change in the world by engaging at the elementary level
+This project is to promote change in the world by engaging at the elementary level. Progress is given in the wiki.
 
 ## Getting Started
 

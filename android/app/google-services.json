@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "737513663422",
+    "firebase_url": "https://parivartan-24.firebaseio.com",
+    "project_id": "parivartan-24",
+    "storage_bucket": "parivartan-24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737513663422:android:d5b775e9437c4dc8aea7ef",
+        "android_client_info": {
+          "package_name": "our.wellness.parivartan_world"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737513663422-3j9spptofm8fpqfrts347oqiva65c65r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "our.wellness.parivartan_world",
+            "certificate_hash": "0d84ef3a0c55749386a44398166352f44f6323f9"
+          }
+        },
+        {
+          "client_id": "737513663422-fad45v2vr721hto2p9s4o9n4m25hr047.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS1fx6qnqV6PiYp_iXP5-mI_Yl1TM0vHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737513663422-fad45v2vr721hto2p9s4o9n4m25hr047.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

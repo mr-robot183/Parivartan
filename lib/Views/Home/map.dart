@@ -6,7 +6,8 @@ import 'package:parivartan_world/Views/Home/Add.dart';
 import 'package:parivartan_world/Views/Home/ToDo.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:parivartan_world/Services/auth.dart';
-import 'package:parivartan_world/Views/SignIn.dart';
+import 'package:parivartan_world/Views/Authentication/SignIn.dart';
+import 'package:parivartan_world/Views/UserProfile/ProfilePage.dart';
 
 
 
@@ -65,6 +66,12 @@ class _HomeMapState extends State<HomeMap> {
               ),
               child: Center(child: Text("Parivartan", style: GoogleFonts.audiowide(fontSize: 40, fontWeight: FontWeight.bold, color: Colors.indigo))),
             ),
+            Card(child: ListTile(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
+              },
+              title: Center(child: Text("My Account", style: GoogleFonts.mavenPro(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black87 ))),
+            ),),
             Container(child: RaisedButton(onPressed: () async {
               try {
                 await _auth.signOut();
@@ -97,7 +104,7 @@ class _HomeMapState extends State<HomeMap> {
             label: 'Home',
           ),FFNavigationBarItem(
             iconData: Icons.add,
-            label: 'Add',
+            label: 'Parivartan',
           ),
           FFNavigationBarItem(
             iconData: FontAwesomeIcons.pen,

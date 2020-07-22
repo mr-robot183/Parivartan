@@ -32,6 +32,12 @@ dependencies:
   provider: ^3.1.0
   ff_navigation_bar:
   google_fonts: ^1.1.0
+  firebase_database: ^3.1.6
+  intl: ^0.15.8
+  flutter_spinkit: "^4.1.2"
+
+
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -55,10 +61,14 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - Assets/Images/ForDrawer.jpg
     - Assets/Images/one.jpeg
     - Assets/Images/ques.jpeg
     - Assets/Images/ToDo.jpg
+    - Assets/Images/environment.jpeg
+    - Assets/Images/animals.jpeg
+    - Assets/Images/india.jpeg
+    - Assets/Images/clean.jpeg
+    - Assets/Images/tick.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

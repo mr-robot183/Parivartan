@@ -4,12 +4,20 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:parivartan_world/Views/Home/Add/AddPage.dart';
 
+class Data {
+  String title;
+  Data({this.title});
+}
+
 class Add extends StatefulWidget {
+  /*String title;
+  Add({Key key, @required this.title}):super(key:key);*/
   @override
   _AddState createState() => _AddState();
 }
 
 class _AddState extends State<Add> {
+
 
   final titles = ['Did Something Good For Environment',
     'Did Something Good For Animals',
@@ -82,8 +90,8 @@ class _AddState extends State<Add> {
                   return Card(
                     child: ListTile(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => AddPage(title: titles1[index],)));
-                      },
+                        final data = Data(title: titles[index]);
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => AddPage(data0: data)));                      },
                       leading: FaIcon(FontAwesomeIcons.solidDotCircle, color: Colors.indigo,),
                       title: Text(titles[index]),
                       trailing: Icon(Icons.keyboard_arrow_right, color: Colors.indigo,),
@@ -109,7 +117,8 @@ class _AddState extends State<Add> {
                     return Card(
                       child: ListTile(
                         onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => AddPage(title: titles1[index],)));
+                          final data = Data(title: titles1[index]);
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => AddPage(data0: data)));
                         },
                         leading: FaIcon(FontAwesomeIcons.solidDotCircle, color: Colors.indigo,),
                         title: Text(titles1[index]),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:parivartan_world/Views/SignIn.dart';
-import 'package:parivartan_world/Views/SignUp.dart';
+import 'package:parivartan_world/Views/Authentication/SignIn.dart';
+import 'package:parivartan_world/Views/Authentication/SignUp.dart';
 
 
 class Authenticate extends StatefulWidget {

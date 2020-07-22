@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:parivartan_world/Animation/FadeAnimation.dart';
 
@@ -175,7 +176,10 @@ class _HomeState extends State<Home> {
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: TextFormField(
                         controller: q1,
-
+                        decoration: InputDecoration(
+                            hintText: "ex:",
+                            hintStyle: TextStyle(color: Colors.grey),
+                        ),
                       ),
                     ),
                     Padding(
@@ -186,7 +190,10 @@ class _HomeState extends State<Home> {
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: TextFormField(
                         controller: q2,
-
+                        decoration: InputDecoration(
+                            hintText: "ex:",
+                            hintStyle: TextStyle(color: Colors.grey),
+                        ),
                       ),
                     ),
                     Padding(
@@ -197,18 +204,36 @@ class _HomeState extends State<Home> {
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: TextFormField(
                         controller: q3,
+                        decoration: InputDecoration(
+                            hintText: "ex:",
+                            hintStyle: TextStyle(color: Colors.grey),
+                        ),
                       ),
                     ),
+                    SizedBox(height: 20,),
+                    Center(
+                      child: Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: RaisedButton(
+                          color: Colors.indigo,
+                          onPressed: () {},
+                          child: Text("Save Report", style: TextStyle(color: Colors.white),),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
-              Container(
-                height: queryData.size.height/3,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('Assets/Images/ques.jpeg'),
-                    fit: BoxFit.cover
-                  )
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: Container(
+                  height: queryData.size.height/3,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('Assets/Images/ques.jpeg'),
+                      fit: BoxFit.cover
+                    )
+                  ),
                 ),
               )
             ],

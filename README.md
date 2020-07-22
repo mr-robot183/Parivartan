@@ -18,4 +18,4 @@ samples, guidance on mobile development, and a full API reference.
 
 ![alt text](https://github.com/mr-robot183/Parivartan/blob/origin/image.jpg?raw=true)
 
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+![Alt text](Parivartan/Assets/Screenshots/Screenshot_20200722-135728.jpeg?raw=true "Title")
